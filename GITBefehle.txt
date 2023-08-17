@@ -1,0 +1,297 @@
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt
+$ git clone https://github.com/mh-biplus/froozenyogurtshop.git
+Cloning into 'froozenyogurtshop'...
+remote: Enumerating objects: 97, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (27/27), done.
+Receiving objects: 100% (97/97), 1.27 MiB | 9.39 MiB/s, done.
+remote: Total 97 (delta 13), reused 5 (delta 2), pack-reused 68
+Resolving deltas: 100% (23/23), done.
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt
+$ cd froozenyogurtshop
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/Anwender/Desktop/Schulprojekt/
+froozenyogurtshop/.git/
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git checkout dev
+Switched to a new branch 'dev'
+branch 'dev' set up to track 'origin/dev'.
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev)
+$ git checkout -b dev_marpelz_translation
+Switched to a new branch 'dev_marpelz_translation'
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev_marpelz_translation)
+$ git status
+On branch dev_marpelz_translation
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   about.html
+        modified:   blog.html
+        modified:   contact.html
+        modified:   index.html
+        modified:   product.html
+        modified:   singlepost.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev_marpelz_translation)
+$ git add about.html blog.html contact.html index.html product.html singlepost.html
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev_marpelz_translation)
+$ git commit -m "Translated Titles in Menus and Footers"
+[dev_marpelz_translation 7235c47] Translated Titles in Menus and Footers
+ 6 files changed, 60 insertions(+), 60 deletions(-)
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev_marpelz_translation)
+$ git remote set-url origin https://github.com/Marpelz/FroozenYogurtShop.git
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev_marpelz_translation)
+$ git push -u origin dev_marpelz_translation
+Enumerating objects: 97, done.
+Counting objects: 100% (97/97), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (76/76), done.
+Writing objects: 100% (97/97), 1.26 MiB | 1.80 MiB/s, done.
+Total 97 (delta 26), reused 85 (delta 17), pack-reused 0
+remote: Resolving deltas: 100% (26/26), done.
+To https://github.com/Marpelz/FroozenYogurtShop.git
+ * [new branch]      dev_marpelz_translation -> dev_marpelz_translation
+branch 'dev_marpelz_translation' set up to track 'origin/dev_marpelz_translation
+'.
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev_marpelz_translation)
+$ git status
+On branch dev_marpelz_translation
+Your branch is up to date with 'origin/dev_marpelz_translation'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        GITBefehle.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev_marpelz_translation)
+$ git add GITBefehle.txt
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev_marpelz_translation)
+$ git commit -m "Added GITBefehle.txt"
+[dev_marpelz_translation a73e135] Added GITBefehle.txt
+ 1 file changed, 69 insertions(+)
+ create mode 100644 GITBefehle.txt
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev_marpelz_translation)
+$ git push -u origin dev_marpelz_translation
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.13 KiB | 1.13 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Marpelz/FroozenYogurtShop.git
+   7235c47..a73e135  dev_marpelz_translation -> dev_marpelz_translation
+branch 'dev_marpelz_translation' set up to track 'origin/dev_marpelz_translation
+'.
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev_marpelz_translation)
+$ git checkout -b main dev_marpelz_translation
+fatal: a branch named 'main' already exists
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev_marpelz_translation)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.37 KiB | 1.37 MiB/s, done.
+Total 5 (delta 3), reused 3 (delta 1), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'main' on GitHub by visiting:
+remote:      https://github.com/Marpelz/FroozenYogurtShop/pull/new/main
+remote:
+To https://github.com/Marpelz/FroozenYogurtShop.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git pull origin main
+From https://github.com/Marpelz/FroozenYogurtShop
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git branch -m main dev_marpelz_translation
+fatal: a branch named 'dev_marpelz_translation' already exists
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git pull origin main
+From https://github.com/Marpelz/FroozenYogurtShop
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git checkout -b bugfix001
+Switched to a new branch 'bugfix001'
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (bugfix001)
+$ git status
+On branch bugfix001
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   about.html
+        modified:   blog.html
+        modified:   contact.html
+        modified:   css/style.css
+        modified:   index.html
+        modified:   product.html
+        modified:   singlepost.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (bugfix001)
+$ git add about.html blog.html contact.html css/style.css index.html product.html singlepost.html
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (bugfix001)
+$ git commit -m "Bugfixes: style.css (background was a Comment in Row 303), product.html (stylesheet folder failure, double css/css/), index.html (type failure)"
+[bugfix001 9c57554] Bugfixes: style.css (background was a Comment in Row 303), p
+roduct.html (stylesheet folder failure, double css/css/), index.html (type failu
+re)
+ 7 files changed, 62 insertions(+), 62 deletions(-)
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (bugfix001)
+$ git status
+On branch bugfix001
+nothing to commit, working tree clean
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (bugfix001)
+$ git push origin bugfix001
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 1.81 KiB | 927.00 KiB/s, done.
+Total 10 (delta 7), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (7/7), completed with 7 local objects.
+remote:
+remote: Create a pull request for 'bugfix001' on GitHub by visiting:
+remote:      https://github.com/Marpelz/FroozenYogurtShop/pull/new/bugfix001
+remote:
+To https://github.com/Marpelz/FroozenYogurtShop.git
+ * [new branch]      bugfix001 -> bugfix001
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (bugfix001)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git pull origin main
+From https://github.com/Marpelz/FroozenYogurtShop
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git merge bugfix001
+Updating 08d6b99..9c57554
+Fast-forward
+ about.html      | 20 ++++++++++----------
+ blog.html       | 20 ++++++++++----------
+ contact.html    | 20 ++++++++++----------
+ css/style.css   |  4 ++--
+ index.html      | 20 ++++++++++----------
+ product.html    | 20 ++++++++++----------
+ singlepost.html | 20 ++++++++++----------
+ 7 files changed, 62 insertions(+), 62 deletions(-)
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Marpelz/FroozenYogurtShop.git
+   08d6b99..9c57554  main -> main
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git pull origin main
+From https://github.com/Marpelz/FroozenYogurtShop
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git checkout bugfix001
+Switched to branch 'bugfix001'
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (bugfix001)
+$ git status
+On branch bugfix001
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (bugfix001)
+$ git add contact.html
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (bugfix001)
+$ git commit -m "Bugfix: contact.html (type failure)"
+[bugfix001 341a16d] Bugfix: contact.html (type failure)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (bugfix001)
+$ git push origin bugfix001
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 308 bytes | 308.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Marpelz/FroozenYogurtShop.git
+   9c57554..341a16d  bugfix001 -> bugfix001
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (bugfix001)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git pull origin main
+From https://github.com/Marpelz/FroozenYogurtShop
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git merge bugfix001
+Updating 9c57554..341a16d
+Fast-forward
+ contact.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Marpelz/FroozenYogurtShop.git
+   9c57554..341a16d  main -> main
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$
