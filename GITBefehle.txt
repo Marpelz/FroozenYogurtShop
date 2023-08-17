@@ -1,0 +1,69 @@
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt
+$ git clone https://github.com/mh-biplus/froozenyogurtshop.git
+Cloning into 'froozenyogurtshop'...
+remote: Enumerating objects: 97, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (27/27), done.
+Receiving objects: 100% (97/97), 1.27 MiB | 9.39 MiB/s, done.
+remote: Total 97 (delta 13), reused 5 (delta 2), pack-reused 68
+Resolving deltas: 100% (23/23), done.
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt
+$ cd froozenyogurtshop
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/Anwender/Desktop/Schulprojekt/
+froozenyogurtshop/.git/
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (main)
+$ git checkout dev
+Switched to a new branch 'dev'
+branch 'dev' set up to track 'origin/dev'.
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev)
+$ git checkout -b dev_marpelz_translation
+Switched to a new branch 'dev_marpelz_translation'
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev_marpelz_translation)
+$ git status
+On branch dev_marpelz_translation
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   about.html
+        modified:   blog.html
+        modified:   contact.html
+        modified:   index.html
+        modified:   product.html
+        modified:   singlepost.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev_marpelz_translation)
+$ git add about.html blog.html contact.html index.html product.html singlepost.html
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev_marpelz_translation)
+$ git commit -m "Translated Titles in Menus and Footers"
+[dev_marpelz_translation 7235c47] Translated Titles in Menus and Footers
+ 6 files changed, 60 insertions(+), 60 deletions(-)
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev_marpelz_translation)
+$ git remote set-url origin https://github.com/Marpelz/FroozenYogurtShop.git
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev_marpelz_translation)
+$ git push -u origin dev_marpelz_translation
+Enumerating objects: 97, done.
+Counting objects: 100% (97/97), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (76/76), done.
+Writing objects: 100% (97/97), 1.26 MiB | 1.80 MiB/s, done.
+Total 97 (delta 26), reused 85 (delta 17), pack-reused 0
+remote: Resolving deltas: 100% (26/26), done.
+To https://github.com/Marpelz/FroozenYogurtShop.git
+ * [new branch]      dev_marpelz_translation -> dev_marpelz_translation
+branch 'dev_marpelz_translation' set up to track 'origin/dev_marpelz_translation
+'.
+
+Anwender@DESKTOP-ILQNAF5 MINGW64 ~/Desktop/Schulprojekt/froozenyogurtshop (dev_marpelz_translation)
+$
